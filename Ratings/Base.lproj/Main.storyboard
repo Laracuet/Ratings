@@ -22,7 +22,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Gestures" id="xaW-HZ-Yzp"/>
+                    <tabBarItem key="tabBarItem" title="Gestures" image="Gestures.png" id="xaW-HZ-Yzp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q17-DI-PfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,7 +47,7 @@
             </objects>
             <point key="canvasLocation" x="-262" y="-481"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Players-->
         <scene sceneID="tAs-Jx-r0K">
             <objects>
                 <tableViewController id="2Lz-KN-wPs" sceneMemberID="viewController">
@@ -68,7 +68,7 @@
                             <outlet property="delegate" destination="2Lz-KN-wPs" id="5cO-vN-WU7"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="DpU-fP-YbK"/>
+                    <navigationItem key="navigationItem" title="Players" id="DpU-fP-YbK"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zq2-jW-Ca4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,7 +78,7 @@
         <scene sceneID="hl7-G3-91Q">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AFp-dp-0X1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Players" id="mjg-N0-yTe"/>
+                    <tabBarItem key="tabBarItem" title="Players" image="Players.png" id="mjg-N0-yTe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BP5-AP-5LL">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -94,6 +94,10 @@
             <point key="canvasLocation" x="217" y="-919"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Gestures.png" width="30" height="30"/>
+        <image name="Players.png" width="30" height="30"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
