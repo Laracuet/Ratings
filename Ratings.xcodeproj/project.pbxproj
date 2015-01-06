@@ -42,6 +42,7 @@
 		54EDEC321A5B170A00DFA67B /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EDEC311A5B170A00DFA67B /* SampleData.swift */; };
 		54EDEC341A5B2F9C00DFA67B /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EDEC331A5B2F9C00DFA67B /* PlayerCell.swift */; };
 		54EDEC361A5C6C0800DFA67B /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EDEC351A5C6C0800DFA67B /* PlayerDetailsViewController.swift */; };
+		54EDEC381A5C85F800DFA67B /* GamePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EDEC371A5C85F800DFA67B /* GamePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		54EDEC311A5B170A00DFA67B /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		54EDEC331A5B2F9C00DFA67B /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		54EDEC351A5C6C0800DFA67B /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
+		54EDEC371A5C85F800DFA67B /* GamePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				54A158731A530EB10087E762 /* AppDelegate.swift */,
 				54A158751A530EB10087E762 /* ViewController.swift */,
 				54A158771A530EB10087E762 /* Main.storyboard */,
+				54EDEC371A5C85F800DFA67B /* GamePickerViewController.swift */,
 				54EDEC351A5C6C0800DFA67B /* PlayerDetailsViewController.swift */,
 				54EDEC331A5B2F9C00DFA67B /* PlayerCell.swift */,
 				54EDEC2F1A5B16C400DFA67B /* Player.swift */,
@@ -331,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54EDEC381A5C85F800DFA67B /* GamePickerViewController.swift in Sources */,
 				54EDEC341A5B2F9C00DFA67B /* PlayerCell.swift in Sources */,
 				54EDEC301A5B16C400DFA67B /* Player.swift in Sources */,
 				54A158761A530EB10087E762 /* ViewController.swift in Sources */,

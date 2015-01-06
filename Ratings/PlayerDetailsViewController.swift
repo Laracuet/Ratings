@@ -14,6 +14,7 @@ class PlayerDetailsViewController: UITableViewController {
     @IBOutlet weak var detailLabel: UILabel!
     
     var player:Player!
+    var game:String = "Chess"
     
     //ensures that nameTextField becomes first responder when the
     //user taps anywhere on the first table row
@@ -27,6 +28,20 @@ class PlayerDetailsViewController: UITableViewController {
         if segue.identifier == "SavePlayerDetail" {
             player = Player(name: self.nameTextField.text, game: "Chess", rating: 1)
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        detailLabel.text = game
+    }
+    
+    @IBAction func selectedGame(segue:UIStoryboardSegue) {
+        let gamePickerViewController = segue.sourceViewController as GamePickerViewController
+        if let selectedGame = gamePickerViewController.selectedGame {
+            detailLabel.text = selectedGame
+            game = selectedGame
+        }
+        self.navigationController?.popViewControllerAnimated(true)
     }
 
 }

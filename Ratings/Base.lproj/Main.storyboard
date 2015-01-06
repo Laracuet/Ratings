@@ -153,6 +153,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="yvF-V9-RFi" kind="push" identifier="PickGame" id="aKC-L5-5Zg"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -183,6 +186,45 @@
                 <exit id="b9F-2r-OFI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1732" y="-925"/>
+        </scene>
+        <!--Choose Game-->
+        <scene sceneID="GXO-ld-02I">
+            <objects>
+                <tableViewController id="yvF-V9-RFi" customClass="GamePickerViewController" customModule="Ratings" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="HUL-7M-Mft">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GameCell" textLabel="wSk-x0-cgn" style="IBUITableViewCellStyleDefault" id="PPT-dH-lUg">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PPT-dH-lUg" id="5Ux-Jc-1qM">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wSk-x0-cgn">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="gUQ-4a-hK5" kind="unwind" identifier="SaveSelectedGame" unwindAction="selectedGame:" id="ZQp-EM-6LU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yvF-V9-RFi" id="dGH-b3-dBR"/>
+                            <outlet property="delegate" destination="yvF-V9-RFi" id="thd-eF-TNS"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Choose Game" id="1QV-vU-6Lw"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lge-ol-E41" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gUQ-4a-hK5" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2236" y="-919"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dXj-Ew-JKR">
