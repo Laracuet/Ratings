@@ -165,12 +165,12 @@
                     <navigationItem key="navigationItem" title="Add Player" id="LLH-Fd-E4i">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Epd-6P-w7d">
                             <connections>
-                                <segue destination="b9F-2r-OFI" kind="unwind" unwindAction="cancelToPlayersViewController:" id="Zxd-vN-odL"/>
+                                <segue destination="b9F-2r-OFI" kind="unwind" identifier="CancelPlayerDetail" unwindAction="cancelToPlayersViewController:" id="Zxd-vN-odL"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="kfM-rI-7pi">
                             <connections>
-                                <segue destination="b9F-2r-OFI" kind="unwind" unwindAction="savePlayerDetail:" id="yCI-a3-BGf"/>
+                                <segue destination="b9F-2r-OFI" kind="unwind" identifier="SavePlayerDetail" unwindAction="savePlayerDetail:" id="yCI-a3-BGf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

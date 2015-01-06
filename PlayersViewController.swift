@@ -9,19 +9,30 @@
 import UIKit
 
 class PlayersViewController: UITableViewController {
+    var players: [Player] = playersData
     
     //called to dismiss the 'Add Player' modal View
     @IBAction func cancelToPlayersViewController(segue:UIStoryboardSegue) {
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    //called to dismiss the 'Add Player' modal View
+    //called to retrieve the view from the segue call, add the player from the view to the players
+    //array, update the Table View with an animation, and dismiss the 'Add Player' modal View
     @IBAction func savePlayerDetail(segue:UIStoryboardSegue) {
+        let playerDetailsViewController = segue.sourceViewController as PlayerDetailsViewController
+        
+        //add the new player to the players array
+        players.append(playerDetailsViewController.player)
+        
+        //update the Table View
+        let indexPath = NSIndexPath(forRow: players.count-1, inSection: 0)
+        tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        //could also do this:
+        //tableView.reloadData()
+        
+        //hide the View Controller
         dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    
-    var players: [Player] = playersData 
 
     override func viewDidLoad() {
         super.viewDidLoad()
