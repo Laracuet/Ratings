@@ -9,6 +9,18 @@
 import UIKit
 
 class PlayersViewController: UITableViewController {
+    
+    //called to dismiss the 'Add Player' modal View
+    @IBAction func cancelToPlayersViewController(segue:UIStoryboardSegue) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    //called to dismiss the 'Add Player' modal View
+    @IBAction func savePlayerDetail(segue:UIStoryboardSegue) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
     var players: [Player] = playersData 
 
     override func viewDidLoad() {
