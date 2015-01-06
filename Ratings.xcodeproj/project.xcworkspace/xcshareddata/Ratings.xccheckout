@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F2F86F73-B656-4223-A6D9-28E6CB09F6E5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Ratings</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7695ED30869E2E13B6817B0FEBF80503B3E2A588</key>
+		<string>https://github.com/Laracuet/Ratings.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Ratings.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7695ED30869E2E13B6817B0FEBF80503B3E2A588</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Laracuet/Ratings.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7695ED30869E2E13B6817B0FEBF80503B3E2A588</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7695ED30869E2E13B6817B0FEBF80503B3E2A588</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Ratings</string>
+		</dict>
+	</array>
+</dict>
+</plist>
