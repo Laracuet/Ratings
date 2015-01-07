@@ -23,7 +23,16 @@ class GamePickerViewController: UITableViewController {
             "Texas Hold'em Poker",
             "League of Legends",
             "Mario",
-            "Super Smash Bros."]
+            "Super Smash Bros.",
+            "Chess"]
+        
+        if let game = selectedGame {
+            //Debugging
+            /*var testSelectedGameString = "Game is " + selectedGame!
+            println(testSelectedGameString)*/
+            
+            selectedGameIndex = find(games, game)!
+        }
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

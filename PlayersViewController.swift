@@ -145,7 +145,7 @@ class PlayersViewController: UITableViewController {
         // Return NO if you do not want the item to be re-orderable.
         return true
     }
-    */
+    */ 
 
     /*
     // MARK: - Navigation

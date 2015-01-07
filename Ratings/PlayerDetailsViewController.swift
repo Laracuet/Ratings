@@ -26,8 +26,21 @@ class PlayerDetailsViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "SavePlayerDetail" {
-            player = Player(name: self.nameTextField.text, game: "Chess", rating: 1)
+            player = Player(name: self.nameTextField.text, game: game, rating: 1)
         }
+        if segue.identifier == "PickGame" {
+            let gamePickerViewController = segue.destinationViewController as GamePickerViewController
+            gamePickerViewController.selectedGame = game
+        }
+        
+        /*switch segue.identifier {
+        case "SavePlayerDetail":
+            player = Player(name: self.nameTextField.text, game: game, rating: 1)
+        case "PickGame":
+            let gamePickerViewController = segue.destinationViewController as GamePickerViewController
+            gamePickerViewController.selectedGame = game
+        default:
+        }*/ 
     }
     
     override func viewDidLoad() {
