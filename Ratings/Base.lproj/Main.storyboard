@@ -113,6 +113,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="VP0-BJ-pia">
+                            <rect key="frame" x="0.0" y="319" width="320" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <sections>
                             <tableViewSection headerTitle="Player Name" id="Cig-v9-4Ga">
                                 <cells>
@@ -159,6 +163,25 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="Rating" id="in6-cf-zTG">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xvW-QG-CKg">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xvW-QG-CKg" id="rQp-OD-d1Q">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="5" id="8i9-e5-8g7">
+                                                    <rect key="frame" x="16" y="7" width="288" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="sliderValueChanged:" destination="3MI-KC-A0R" eventType="valueChanged" id="GxE-dG-gMM"/>
+                                                    </connections>
+                                                </slider>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="3MI-KC-A0R" id="TBD-Jk-wda"/>
@@ -180,6 +203,8 @@
                     <connections>
                         <outlet property="detailLabel" destination="1Zn-Su-aFt" id="ucL-3h-bAa"/>
                         <outlet property="nameTextField" destination="2aH-PA-aLA" id="Jhz-1C-hsd"/>
+                        <outlet property="setStarsImage" destination="VP0-BJ-pia" id="5wW-m4-Qoc"/>
+                        <outlet property="starSlider" destination="8i9-e5-8g7" id="2ME-pw-G5g"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tqX-F2-Kk0" userLabel="First Responder" sceneMemberID="firstResponder"/>

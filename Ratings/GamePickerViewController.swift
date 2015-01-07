@@ -16,15 +16,15 @@ class GamePickerViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        games = ["Zelda",
+        games = ["Chess",
+            "Zelda",
             "Pokemon",
             "Russian Roulette",
             "Bomberman",
             "Texas Hold'em Poker",
             "League of Legends",
             "Mario",
-            "Super Smash Bros.",
-            "Chess"]
+            "Super Smash Bros."]
         
         if let game = selectedGame {
             //Debugging
